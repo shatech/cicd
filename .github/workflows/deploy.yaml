@@ -13,8 +13,8 @@ jobs:
           node-version: "16"
       - name: update-chabokan
         env:
-          CHABOKAN_TOKEN: ${{ secrets.7d434bd0f55e43e3641a2b7f5549b0077e5dc305 }}
+          CHABOKAN_TOKEN: ${{ secrets.CHABOKAN_TOKEN }}
         run: |
           npm install -g @chabokan.net/cli
           chabok login -t $CHABOKAN_TOKEN
-          chabok deploy -s my-service
+          chabok deploy -s atrchian
